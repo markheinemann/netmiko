@@ -1,4 +1,4 @@
--some netmiko scripts that are useful for networking tasks <br /><br />
+-some cisco netmiko scripts that are useful for networking tasks <br /><br />
 
  1) send-commands.py <br /><br />
 
