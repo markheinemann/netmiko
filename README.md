@@ -57,6 +57,7 @@ PRV  password:<br />  ( this is the enable password
 
 <b>4) psuinventory.py</b><br /><br />
 
+- this script will return psu inventory information form a list of cisco devices
 -this script will call devices.txt <br />
 -it will ssh through the corporate jumpbox ( bastion security host )  and establish ssh connection with each  switch address in devices.txt<br />
 -it will convert the output of 'show invent' to structured data using textfsm<br />
