@@ -28,12 +28,12 @@ if you get a keygen error, then  remove the host from the 'known_hosts' file  in
 
 Terminal Server Username: r3-core\ <br />
 Terminal Server Exec Password:<br />
-PRV  password:<br />
+PRV  password:<br />  ( this is the enable password
 
 
 <b>3) iptomac.py</b></br>
 
--someone asked me for the mac addresses for a selected list of ip addresses on a switch.</br>
+-someone asked me for the mac addresses for a selected list of ip addresses on a cisco switch.</br>
 -I could have just entered  the simple cli command "show ip arp ", copied the output into excel and pulled out the requested data</br>
 -instead this python script will perform the filter and output ONLY the requested data, saving  very little time;)</br>
 -this script will return a list of mac addresses against a selected list of ip addresses as defined in iplist.txt</br>
@@ -49,7 +49,8 @@ PRV  password:<br />
 
 -script will prompt the user for creds - These are necessary and particular to my company's security standards<br /><br />
 
-Terminal Server Username: r3-core\ <br />
-Terminal Server Exec Password:<br />
-PRV  password:<br />
+-Terminal Server Username: <br />
+-Terminal Server Exec Password:<br />
+-r1-core PRV account name:<br />
+-PRV  password:<br />
 
