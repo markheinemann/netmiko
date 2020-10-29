@@ -1,6 +1,6 @@
 -some cisco netmiko scripts that are useful for networking tasks <br /><br />
 
- <b>1) send-commands.py <br /><br /> <b>
+ <b>1) send-commands.py<b> <br /><br /> 
 
 -this netmiko script will call devices.txt and commands.txt <br />
 -devices.txt is a list of ip addresses.one address on each line <br />
@@ -24,7 +24,7 @@ if you get a keygen error, then  remove the host from the 'known_hosts' file  in
 #eg   [u3212308@plgsasse123401 .ssh]$ ssh-keygen -R x.x.x.x   where x.x.x.x is the ip address of the destination device<br /><br />
 
 
--script will prompt the user for creds:<br /><br />
+-script will prompt the user for creds - These are necessary and particular to my company's security standards<br /><br />
 
 Terminal Server Username: r3-core\ <br />
 Terminal Server Exec Password:<br />
