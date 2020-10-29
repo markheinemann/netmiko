@@ -54,3 +54,24 @@ PRV  password:<br />  ( this is the enable password
 -r1-core PRV account name:<br />
 -PRV  password:<br />
 
+
+<b>4) psuinventory.py</b><br /><br />
+
+-this script will call devices.txt <br />
+-it will ssh through the corporate jumpbox ( bastion security host )  and establish ssh connection with each  switch address in devices.txt<br />
+-it will convert the output of 'show invent' to structured data using textfsm<br />
+-the script will parse the data and return all the psus and their serials<br />
+- will write output to a .txt<br /><br />
+
+-if you get a keygen error, then  remove the host from the 'known_hosts' file  in the terminal server<br />
+-[u3212308@plgsasse123401 .ssh]$ pwd<br />
+-/home/u3212308/.ssh<br />-
+-eg   [u3212308@plgsasse123401 .ssh]$ ssh-keygen -R x.x.x.x   where x.x.x.x is the ip address of the destination device<br /><br />
+
+-script will prompt the user for creds - These are necessary and particular to my company's security standards<br /><br /><br />
+
+-Terminal Server Username: <br />
+-Terminal Server Exec Password:<br />
+-r1-core PRV account name:<br />
+-PRV  password:<br />
+
