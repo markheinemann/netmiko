@@ -13,9 +13,12 @@ from getpass import getpass
 #/home/u3238608/.ssh
 #eg   [u3238608@plgsassecste01 .ssh]$ ssh-keygen -R 10.127.242.1
 
-username = input("Terminal Server Username: r3-core\ ")
+
+
+username = input("Terminal Server Username: r3-core\\")
 password = getpass('Terminal Server Exec Password: ')
-secret = getpass('PRV  password: ')
+prvaccount = input("r1-core PRV account name: ")
+secret = getpass('PRV  password:  ')
 
 var1 = "r3-core\\"
 var2 = username
@@ -57,8 +60,7 @@ for device in devices:
 
 
 
-        net_connect.write_channel(
-            "ssh -o StrictHostKeyChecking=no -l r1-core\\\prvmhein " + device + '\n')
+        net_connect.write_channel("ssh -o StrictHostKeyChecking=no -l " + prvaccount + " " + device + '\n')
         time.sleep(2)
         output = net_connect.read_channel()
 
@@ -108,3 +110,4 @@ for device in devices:
     except NetMikoAuthenticationException:
         print('auth failure', device)
         continue
+
