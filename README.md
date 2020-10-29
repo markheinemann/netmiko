@@ -29,3 +29,27 @@ if you get a keygen error, then  remove the host from the 'known_hosts' file  in
 Terminal Server Username: r3-core\ <br />
 Terminal Server Exec Password:<br />
 PRV  password:<br />
+
+
+<b>3) iptomac.py</b></br>
+
+-someone asked me for the mac addresses for a selected list of ip addresses on a switch.</br>
+-I could have just entered  the simple cli command "show ip arp ", copied the output into excel and pulled out the requested data</br>
+-instead this python script will perform the filter and output ONLY the requested data, saving  very little time;)</br>
+-this script will return a list of mac addresses against a selected list of ip addresses as defined in iplist.txt</br>
+-this script wil call devices.txt and iplist.txt</br>
+-it will ssh through the corporate jumpbox( bastion host security measure ) and establish ssh connection with each  switch address in devices.txt</br>
+-it will convert the output of 'show ip arp' to structured data using the python library textfsm</br>
+-the script will then search through iplist.txt and find matches against the switch structured data output</br>
+
+-if you get a keygen error, then  remove the host from the 'known_hosts' file  in the terminal server<br />
+-[u3212308@plgsasse123401 .ssh]$ pwd<br />
+-/home/u3212308/.ssh<br />-
+-eg   [u3212308@plgsasse123401 .ssh]$ ssh-keygen -R x.x.x.x   where x.x.x.x is the ip address of the destination device<br /><br />
+
+-script will prompt the user for creds - These are necessary and particular to my company's security standards<br /><br />
+
+Terminal Server Username: r3-core\ <br />
+Terminal Server Exec Password:<br />
+PRV  password:<br />
+
