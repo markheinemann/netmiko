@@ -1,6 +1,6 @@
 
 
-
+#initial comment
 
 def inputNumber(message):
   while True:
