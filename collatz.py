@@ -39,5 +39,5 @@ def collatz(number):
 
 
 collatz(guess)
-
-print("final number is 1)")
+# print result
+print(" the final number is 1)")
