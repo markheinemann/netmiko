@@ -13,7 +13,7 @@ def inputNumber(message):
        return userInput 
        break 
      
-age = inputNumber("enter number please ?")
+age = inputNumber("please enter number please ?")
 
 
 
