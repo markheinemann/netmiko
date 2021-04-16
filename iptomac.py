@@ -31,8 +31,8 @@ iplist = iplist.strip().splitlines()
 
 
 device_type = 'cisco_nxos'
-username = 'r1-core\\prvmhein'
-password = 'k1SU9eOZitU%Q?'
+username = 'xxxxxxxxxx'
+password = 'yyyyyyyyyy'
 ssh_config_file = '/etc/ssh/ssh_config'
 
 
