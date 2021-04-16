@@ -18,8 +18,8 @@ import textfsm
 
 
 device_type = 'cisco_nxos'
-username = 'r1-core\\prvmhein'
-password = 'lmJKQ$NhrZ%3p4'
+username = 'xxxxxxx'
+password = 'yyyyyyy'
 ssh_config_file = '/etc/ssh/ssh_config'
 
 
